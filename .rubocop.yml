@@ -1,0 +1,58 @@
+---
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - '**/node_modules/**/*'
+    - '**/test/**/*'
+    - '**/db/**/*'
+    - '**/tmp/**/*'
+
+Rails:
+  Enabled: true
+
+# ----------------------------------- STYLE
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: compact
+
+# ----------------------------------- NAMING
+
+Naming/FileName:
+  Enabled: false
+
+Naming/MethodName:
+  EnforcedStyle: snake_case
+
+Naming/PredicateName:
+  Enabled: false
+
+# ----------------------------------- LAYOUT
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  IgnoreCopDirectives: false
+
+# ----------------------------------- PERFORMANCE
+
+Performance:
+  Exclude:
+    - '**/test/**/*'
