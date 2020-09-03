@@ -2,11 +2,12 @@
 
 An attempt at standardizing how we write code across all team members and projects. 
 
-**!!! IMPORTANT**
+# Making Changes
 
-Whenever we add new rules to `.rubocop.yml` we should bump the version tag so that existing projects don't recieve new rules and thus break...
-
-Just create a new release and use the version in your `.rubocop.yml` `inherit_from:` url
+1. Propose - create a pull request proposing a change to the Rubocop rule(s) and request everyone to review it
+2. Discuss - argue, gloves come off, create alliances
+3. Vote - upvote/downvote with emojis 👍/👎 😍/🤮 
+4. Merge - merge the pull request and create a new release with a version bump
 
 # Install
 
