@@ -6,6 +6,7 @@ require:
 AllCops:
   NewCops: enable
   Exclude:
+    - 'bin/**'
     - '**/templates/**/*'
     - '**/vendor/**/*'
     - '**/node_modules/**/*'
@@ -13,7 +14,45 @@ AllCops:
     - '**/db/**/*'
     - '**/tmp/**/*'
 
+# ----------------------------------- RAILS
+
 Rails:
+  Enabled: true
+
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/FindById:
+  Enabled: true
+
+Rails/Inquiry:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+
+Rails/MatchRoute:
+  Enabled: true
+
+Rails/NegateInclude:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+
+Rails/PluckInWhere:
+  Enabled: true
+
+Rails/RenderInline:
+  Enabled: true
+
+Rails/RenderPlainText:
+  Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+
+Rails/WhereExists:
   Enabled: true
 
 # ----------------------------------- STYLE
@@ -201,7 +240,7 @@ Layout/TrailingWhitespace:
 
 Layout/LineLength:
   Enabled: true
-  Max: 120
+  Max: 150
   AllowHeredoc: true
   AllowURI: true
   URISchemes:
@@ -244,9 +283,3 @@ Lint/ShadowingOuterLocalVariable:
 
 Lint/UnusedMethodArgument:
   Enabled: false
-
-# ----------------------------------- METRICS
-
-Metrics/LineLength:
-  Max: 120
-  AutoCorrect: true
