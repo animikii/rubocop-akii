@@ -67,6 +67,9 @@ Style/ClassAndModuleChildren:
   Enabled: true
   EnforcedStyle: compact
 
+Style/GuardClause:
+  Enabled: true
+
 # ----------------------------------- NAMING
 
 Naming/FileName:
@@ -85,6 +88,7 @@ Layout/AccessModifierIndentation:
 
 Layout/HashAlignment:
   Enabled: true
+  EnforcedHashRocketStyle: key
   EnforcedColonStyle: key
   EnforcedLastArgumentHashStyle: always_inspect
 
